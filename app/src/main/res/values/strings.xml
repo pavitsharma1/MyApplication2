@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="signup">signup</string>
+    <string name="donthaveanaccount">Dont have an account</string>
+    <string name="login">Login</string>
+    <string name="forgotpassword">Fotgot your password</string>
+    <string name="enteryourpassword">Enter your password</string>
+    <string name="enteryourid">Enter your id</string>
+    <string name="Welcometoapp">Welcome to snapagram</string>
+    <string name="signupforapp">Signup for snapagram</string>
+    <string name="enteryourname">Enter your name</string>
+    <string name="setapasswrd">Set up a password</string>
+    <string name="Signupbutton">Signup and start using</string>
+    <string name="snapagramwelcomesyou">Snapagram Welcomes You</string>
+    <string name="haveanacc">Already have an account</string>
+</resources>
