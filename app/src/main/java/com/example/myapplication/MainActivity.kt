@@ -37,7 +37,7 @@ class MainActivity : AppCompatActivity() {
             else if (Pss.text.toString().isEmpty())
             {Pss.error="no pass"}
             else{
-                startActivity(Intent(this,Homepage::class.java))
+                startActivity(Intent(this, constraintactivity::class.java))
             }
 
         }
