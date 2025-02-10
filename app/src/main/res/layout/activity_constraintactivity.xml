@@ -14,9 +14,8 @@
         android:layout_height="match_parent"
         android:orientation="vertical"
         app:layout_constraintGuide_percent=".5"
->
 
-    </androidx.constraintlayout.widget.Guideline>
+    />
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/gdlinetwo"
         android:layout_width="match_parent"
@@ -37,26 +36,31 @@
 
     </androidx.constraintlayout.widget.Guideline>
 
-        <TextView
-
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_margin="10dp"
-            android:background="@color/black"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintEnd_toEndOf="@+id/gdlineone"
-            app:layout_constraintBottom_toBottomOf="@id/gdlinetwo"
-            app:layout_constraintStart_toStartOf="parent"
-            >
-
-        </TextView>
-
     <TextView
-
+        android:id="@+id/blackbox"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:layout_margin="10dp"
+        android:background="@color/black"
+        android:gravity="center"
+        android:text="@string/userprofile"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@id/gdlinetwo"
+        app:layout_constraintEnd_toEndOf="@+id/gdlineone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/redbox"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/Sample2"
         android:background="#E00C0C"
         app:layout_constraintTop_toTopOf="parent"
+        android:gravity="center"
         android:layout_margin="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="@id/gdlinetwo"
@@ -65,12 +69,14 @@
 
     </TextView>
     <TextView
-
+        android:id="@+id/skinbox"
         android:layout_width="0dp"
         android:layout_height="0dp"
+       android:text="@string/Sample3"
         android:background="#636F7A11"
         app:layout_constraintTop_toTopOf="@id/gdlinetwo"
         android:layout_margin="10dp"
+        android:gravity="center"
         app:layout_constraintEnd_toEndOf="@+id/gdlineone"
         app:layout_constraintBottom_toBottomOf="@id/gdlinethree"
         app:layout_constraintStart_toStartOf="parent"
@@ -78,12 +84,14 @@
 
     </TextView>
     <TextView
-
+        android:id="@+id/bluebox"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:background="#03A9F4"
         app:layout_constraintTop_toTopOf="@id/gdlinetwo"
         android:layout_margin="10dp"
+        android:text="@string/Sample4"
+        android:gravity="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="@id/gdlinethree"
         app:layout_constraintStart_toStartOf="@id/gdlineone"
@@ -92,11 +100,13 @@
     </TextView>
 
     <TextView
-
+        android:id="@+id/yellowbox"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:background="#FF9800"
         android:layout_margin="10dp"
+        android:text="@string/sample5"
+        android:gravity="center"
         app:layout_constraintTop_toTopOf="@id/gdlinethree"
         app:layout_constraintEnd_toEndOf="@+id/gdlineone"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -105,9 +115,12 @@
 
     </TextView>
     <TextView
+        android:id="@+id/orangebox"
         android:layout_margin="10dp"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:gravity="center"
+        android:text="@string/settings"
         android:background="#FF5722"
         app:layout_constraintTop_toTopOf="@id/gdlinethree"
         app:layout_constraintEnd_toEndOf="parent"
