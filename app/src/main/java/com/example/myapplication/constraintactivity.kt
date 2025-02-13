@@ -52,7 +52,7 @@ class constraintactivity : AppCompatActivity() {
             startActivity(Intent(this, blackbox::class.java))
         }
         txtorange.setOnClickListener {
-            startActivity(Intent(this, Redbox::class.java))
+            startActivity(Intent(this, Calculator::class.java))
         }
 
     }

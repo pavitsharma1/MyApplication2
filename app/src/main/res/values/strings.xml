@@ -66,4 +66,15 @@
     <string name="camname">Camera</string>
     <string name="cameraedit">Add camera name</string>
     <string name="camerasettings">Add cam settings</string>
+    <string name="firstinput">Enter value</string>
+    <string name="add">+</string>
+    <string name="subtract">-</string>
+    <string name="divide">/</string>
+    <string name="multiply">*</string>
+    <string name="subval">Subtract values</string>
+    <string name="addval">Add values</string>
+    <string name="mulval">Multiply values</string>
+    <string name="divval">Divide values</string>
+    <string name="secondinput">Enter value</string>
+    <string name="Resultcalc">0000</string>
 </resources>
