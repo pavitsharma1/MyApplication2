@@ -37,7 +37,9 @@ class Calculator : AppCompatActivity() {
                     var val1 = binding.value1.text.toString().toDouble()
                     var val2 = binding.value2.text.toString().toDouble()
                     y = (val1 + val2)
-                    binding.resultcalc.text = y.toString()}
+                    binding.resultcalc.text = y.toString()
+                Snackbar.make(binding.buttonadd,"addition is done", Snackbar.LENGTH_LONG).show()
+            }
         }
         binding.buttonmultiply.setOnClickListener {
             if (binding.value1.text.toString().isEmpty()){
@@ -52,6 +54,7 @@ class Calculator : AppCompatActivity() {
                 var val2 = binding.value2.text.toString().toDouble()
                 y = (val1 * val2)
                 binding.resultcalc.text = y.toString()
+                Snackbar.make(binding.buttonadd,"multiplication is done", Snackbar.LENGTH_LONG).show()
             }
         }
         binding.buttondivide.setOnClickListener {
@@ -66,7 +69,8 @@ class Calculator : AppCompatActivity() {
             var val2 = binding.value2.text.toString().toDouble()
             y = (val1 / val2)
 
-            binding.resultcalc.text = y.toString() }
+            binding.resultcalc.text = y.toString()
+                Snackbar.make(binding.buttonadd,"division is done", Snackbar.LENGTH_LONG).show()}
         }
         binding.buttonminus.setOnClickListener {
             if (binding.value1.text.toString().isEmpty()){
@@ -81,6 +85,7 @@ class Calculator : AppCompatActivity() {
                 var val2 = binding.value2.text.toString().toDouble()
                 y = (val1 - val2)
                 binding.resultcalc.text = y.toString()
+                Snackbar.make(binding.buttonadd,"subtraction is done", Snackbar.LENGTH_LONG).show()
             }
         }
     }

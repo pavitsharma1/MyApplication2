@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="fragments.FragmentActivity"
+    android:gravity="center">
+
+    <EditText
+        android:id="@+id/fraget1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/red"
+        android:textColor="@color/red"
+        android:hint="@string/hello_blank_fragment"
+
+    />
+    <Button
+        android:id="@+id/btnSaveReverse"
+        android:layout_width="match_parent"
+        android:textColor="@color/red"
+        android:layout_height="wrap_content"
+        android:text="@string/PrintReverse"
+
+        />
+    <fragment
+        android:id="@+id/frag1"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:name="fragments.FirstFragment"
+/>
+
+</LinearLayout>
