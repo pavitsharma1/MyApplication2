@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph.xml"
+    app:startDestination="@id/navFirstFragment">
+
+    <fragment
+        android:id="@+id/navFirstFragment"
+        android:name="com.example.myapplication.NavFirstFragment"
+        android:label="fragment_nav_first"
+        tools:layout="@layout/fragment_nav_first" >
+        <action
+            android:id="@+id/action_navFirstFragment_to_navSecondFragment"
+            app:destination="@id/navSecondFragment" />
+        <action
+            android:id="@+id/action_navFirstFragment_to_navThirdFragment"
+            app:destination="@id/navThirdFragment" />
+        <action
+            android:id="@+id/action_navFirstFragment_to_forgotpasswordFragment"
+            app:destination="@id/forgotpasswordFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/navSecondFragment"
+        android:name="com.example.myapplication.NavSecondFragment"
+        android:label="fragment_nav_second"
+        tools:layout="@layout/fragment_nav_second" >
+        <action
+            android:id="@+id/action_navSecondFragment_to_navFirstFragment"
+            app:destination="@id/navFirstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/navThirdFragment"
+        android:name="com.example.myapplication.NavThirdFragment"
+        android:label="fragment_nav_third"
+        tools:layout="@layout/fragment_nav_third" >
+        <action
+            android:id="@+id/action_navThirdFragment_to_navFirstFragment2"
+            app:destination="@id/navFirstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/forgotpasswordFragment"
+        android:name="com.example.myapplication.forgotpasswordFragment"
+        android:label="fragment_forgotpassword"
+        tools:layout="@layout/fragment_forgotpassword" >
+        <action
+            android:id="@+id/action_forgotpasswordFragment_to_otpFragment"
+            app:destination="@id/otpFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/otpFragment"
+        android:name="com.example.myapplication.otpFragment"
+        android:label="fragment_otp"
+        tools:layout="@layout/fragment_otp" >
+        <action
+            android:id="@+id/action_otpFragment_to_navThirdFragment"
+            app:destination="@id/navThirdFragment" />
+    </fragment>
+
+</navigation>

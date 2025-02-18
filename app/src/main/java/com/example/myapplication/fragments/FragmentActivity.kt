@@ -1,7 +1,6 @@
-package fragments
+package com.example.myapplication.fragments
 
 import android.os.Bundle
-import android.view.LayoutInflater
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -9,7 +8,6 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.myapplication.R
 import com.example.myapplication.databinding.ActivityFragmentBinding
-import com.example.myapplication.databinding.FragmentFirstBinding
 
 class FragmentActivity : AppCompatActivity() {
     lateinit var binding: ActivityFragmentBinding

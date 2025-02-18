@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NavFirstFragment"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <!-- TODO: Update blank fragment layout -->
+    <EditText
+        android:id="@+id/etId"
+        android:inputType="textEmailAddress"
+        android:imeOptions="actionNext"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/userId" />
+    <EditText
+        android:id="@+id/etPss"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberPassword"
+        android:hint="@string/userPss" />
+    <TextView
+        android:id="@+id/frgtPss"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_gravity="end"
+        android:text="@string/forgotpassword"
+/>
+    <Button
+        android:id="@+id/btnNavOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/black"
+        android:text="@string/btnNavOne"
+        />
+    <Button
+        android:id="@+id/btnNavTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/black"
+        android:text="@string/btnNavTwo"
+        />
+</LinearLayout>

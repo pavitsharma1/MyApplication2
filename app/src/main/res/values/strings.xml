@@ -78,9 +78,31 @@
     <string name="secondinput">Enter value</string>
     <string name="Resultcalc">0000</string>
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="userId">User ID</string>
+    <string name="userPss">Password</string>
     <string name="Printeredfrag">Print me</string>
     <string name="save">Save</string>
     <string name="colorBlack">Black</string>
     <string name="PrintReverse">Reverse save</string>
+    <string name="firstfragtransfer">1st Frag Transfer</string>
+    <string name="uibtn1">Go  Back  To \nHome Page</string>
+    <string name="dob">Dob</string>
+    <string name="name">Name</string>
+    <string name="Mobile">Mobile</string>
+    <string name="Email">Email</string>
+    <string name="address">Address</string>
+    <string name="userid">hehesharma@hehehehe.com</string>
+    <string name="number">1234567890</string>
+    <string name="dobDate">00-00-0000</string>
+    <string name="addressInput">vill 0000 \n state 0000 \n P.O-0000</string>
+    <string name="btnNavOne">Login</string>
+    <string name="btnNavTwo">Signup</string>
+    <string name="hello_blank_fragment">swagat hai</string>
+    <string name="etUsrName">Setup a username</string>
+    <string name="setId">Set an email id</string>
+    <string name="setPss">Set up a password</string>
+    <string name="etUsrEmail">Set up an email</string>
+    <string name="forgotPassword">Forgot your password </string>
+    <string name="otp">Enter Otp</string>
+    <string name="sendOtp">Send otp to email</string>
 </resources>
