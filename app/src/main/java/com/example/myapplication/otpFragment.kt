@@ -22,8 +22,11 @@ class otpFragment : Fragment() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         ActivityNavigate=activity as JetPackActivity
-        arguments?.let {
+        binding= FragmentOtpBinding.inflate(layoutInflater)
 
+        arguments?.let {
+            var  email = it.getString("email")
+            binding.emlIdPrinter.text=email
         }
     }
 
@@ -31,7 +34,6 @@ class otpFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        binding= FragmentOtpBinding.inflate(layoutInflater)
         binding.otpLogin.setOnClickListener {
             if (binding.otpEt1.text.toString().isEmpty()
                 ){
@@ -50,8 +52,8 @@ class otpFragment : Fragment() {
                 binding.otpEt4.error="enter otp"
             }
             else{
+
             ActivityNavigate.navController.navigate(R.id.action_otpFragment_to_navThirdFragment)
-                forgotpasswordFragment.createfun3(binding.emlIdPrinter.text.toString())
         }
         }
         binding.otpEt1.addTextChangedListener(object: TextWatcher{
@@ -98,6 +100,9 @@ class otpFragment : Fragment() {
                 if(binding.otpEt2.length()==1){
                     binding.otpEt3.requestFocus()
                 }
+                else if(binding.otpEt2.length()==0){
+                    binding.otpEt1.requestFocus()
+                }
             }
 
         })
@@ -123,6 +128,34 @@ class otpFragment : Fragment() {
            if( binding.otpEt3.length()==1){
                binding.otpEt4.requestFocus()
            }
+                else if(binding.otpEt3.length()==0){
+                    binding.otpEt2.requestFocus()
+                }
+            }
+        })
+        binding.otpEt4.addTextChangedListener(object:TextWatcher{
+            override fun beforeTextChanged(
+                p0: CharSequence?,
+                p1: Int,
+                p2: Int,
+                p3: Int
+            ) {
+
+            }
+
+            override fun onTextChanged(
+                p0: CharSequence?,
+                p1: Int,
+                p2: Int,
+                p3: Int
+            ) {
+            }
+
+            override fun afterTextChanged(p0: Editable?) {
+
+                if(binding.otpEt4.length()==0){
+                    binding.otpEt3.requestFocus()
+                }
             }
         })
         return binding.root

@@ -33,15 +33,12 @@ class forgotpasswordFragment : Fragment() {
         binding.btnOtp.setOnClickListener {
             if (Patterns.EMAIL_ADDRESS.matcher(binding.emlOtp.text).matches())
             {
-                ActivityNavigate.navController.navigate(R.id.action_forgotpasswordFragment_to_otpFragment);
-                addemail.addtxt2(binding.emlOtp.text.toString())
+                var bundle=Bundle()
+                bundle.putString("email",binding.emlOtp.text.toString())
+                ActivityNavigate.navController.navigate(R.id.action_forgotpasswordFragment_to_otpFragment,bundle)
             }
             else{binding.emlOtp.error="Enter valid email"}
         }
         return binding.root
     }
-    fun createfun3(txteml:String){
-        binding.emlOtp.setText(txteml)
-    }
-
 }
