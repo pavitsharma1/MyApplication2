@@ -48,12 +48,13 @@ class NavThirdFragment : Fragment() {
                 binding.btnDialog.text= "${++x}"
                 dialog.dismiss()
             }
-//            binding.btnDialog.text=x.toString()
             sub.setOnClickListener {
                 binding.btnDialog.text="${--x}"
+                dialog.dismiss()
             }
             zero.setOnClickListener {
                 binding.btnDialog.text="0"
+            dialog.dismiss()
             }
         }
         return binding.root

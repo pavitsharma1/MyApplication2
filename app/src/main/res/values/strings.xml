@@ -109,4 +109,7 @@
     <string name="Dialog">Dialog</string>
     <string name="zero">set 0</string>
     <string name="AlertDialog">Alert Dialog</string>
+    <string name="addData">Add data</string>
+    <string name="etName">Enter name</string>
+    <string name="update">Update</string>
 </resources>
