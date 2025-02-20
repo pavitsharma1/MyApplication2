@@ -105,4 +105,8 @@
     <string name="forgotPassword">Forgot your password </string>
     <string name="otp">Enter Otp</string>
     <string name="sendOtp">Send otp to email</string>
+    <string name="dialogOne">1st Dialog</string>
+    <string name="Dialog">Dialog</string>
+    <string name="zero">set 0</string>
+    <string name="AlertDialog">Alert Dialog</string>
 </resources>
