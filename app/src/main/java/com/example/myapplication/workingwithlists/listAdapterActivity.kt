@@ -41,7 +41,7 @@ class listAdapterActivity : AppCompatActivity() {
             dialog.show()
             dialog.window?.setLayout(LayoutParams.MATCH_PARENT,LayoutParams.WRAP_CONTENT)
 
-            var newdata=dialog.findViewById<EditText>(R.id.etData)
+            var newdata=dialog.findViewById<EditText>(R.id.etDataName)
            var savedata=dialog.findViewById<Button>(R.id.btnAddData)
             savedata.setOnClickListener {
                 thisarray.add(newdata.text.toString())
@@ -53,7 +53,9 @@ class listAdapterActivity : AppCompatActivity() {
              var dialog2 =Dialog(this)
              dialog2.setContentView(R.layout.dialog_list2)
              dialog2.show()
-             var newdata2=dialog2.findViewById<EditText>(R.id.etData2)
+             dialog2.window?.setLayout(LayoutParams.MATCH_PARENT,LayoutParams.WRAP_CONTENT)
+
+             var newdata2=dialog2.findViewById<EditText>(R.id.etDataName2)
              var savedata2=dialog2.findViewById<Button>(R.id.btnAddData2)
              savedata2.setOnClickListener {
                  thisarray[i]=newdata2.text.toString()

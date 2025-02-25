@@ -7,8 +7,23 @@
 
 
     <EditText
-        android:id="@+id/etData2"
-        android:layout_width="wrap_content"
+        android:id="@+id/etDataName2"
+        android:layout_width="match_parent"
+        android:inputType="text"
+        android:layout_height="wrap_content"
+        android:hint="@string/etName"
+        />
+    <EditText
+        android:id="@+id/etDataCont2"
+        android:inputType="number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/etName"
+        />
+    <EditText
+        android:inputType="number"
+        android:id="@+id/etDataRlNo2"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/etName"
         />

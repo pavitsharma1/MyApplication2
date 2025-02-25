@@ -112,4 +112,7 @@
     <string name="addData">Add data</string>
     <string name="etName">Enter name</string>
     <string name="update">Update</string>
+    <string name="etData">Enter data</string>
+    <string name="cont">Contact number</string>
+    <string name="rlno">Roll no</string>
 </resources>
