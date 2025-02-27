@@ -115,4 +115,10 @@
     <string name="etData">Enter data</string>
     <string name="cont">Contact number</string>
     <string name="rlno">Roll no</string>
+    <string name="costumerdata">Costumer Data</string>
+    <string name="StockHomepage">Manage your stock here</string>
+    <string name="OrderHistoryWelcome">Manage your order history here</string>
+    <string name="orderHistory">Order History</string>
+    <string name="Stockmanage">Stock manager</string>
+    <string name="enterNumberValue">Enter Number Value</string>
 </resources>
