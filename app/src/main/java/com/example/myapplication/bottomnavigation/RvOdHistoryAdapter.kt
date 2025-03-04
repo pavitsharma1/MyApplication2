@@ -29,13 +29,12 @@ class RvOdHistoryAdapter (var orderarray: ArrayList<OrderData>, var bottomNavInt
         holder.binding.tvItemQuantity.setText(orderarray[position].odrquantity.toString())
 
         holder.itemView.setOnClickListener {
-println("CHeck Value Data")
-            //bottomNavInterface.update(position)
+            bottomNavInterface.update(position)
         }
-//        holder.itemView.setOnLongClickListener {
-//            bottomNavInterface.remove(position)
-//            return@setOnLongClickListener true
-//        }
+        holder.itemView.setOnLongClickListener {
+            bottomNavInterface.remove(position)
+            return@setOnLongClickListener true
+        }
     }
 
     override fun getItemCount(): Int {
