@@ -121,4 +121,15 @@
     <string name="orderHistory">Order History</string>
     <string name="Stockmanage">Stock manager</string>
     <string name="enterNumberValue">Enter Number Value</string>
+    <string name="Itemname">Item name</string>
+    <string name="Itemprice">Item Price</string>
+    <string name="Itemquantity">Item Quantity</string>
+    <string name="ItemQuantity">Item Quantity</string>
+    <string name="inputData">Input Data</string>
+    <string name="pincode">Add Pincode</string>
+    <string name="odval">"Add avg Order Value "</string>
+    <string name="enter_name">Enter Name</string>
+    <string name="enter_contact">Enter Contact No.</string>
+    <string name="enter_address">Enter Address</string>
+    <string name="avgOrderValue">Avg Order Value</string>
 </resources>

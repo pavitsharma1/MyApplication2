@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+
+
+    <EditText
+        android:inputType="textPersonName"
+        android:imeOptions="actionNext"
+        android:id="@+id/etCostNameDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_name"
+        />
+    <EditText
+        android:inputType="number"
+        android:id="@+id/etCostContDialog"
+        android:layout_width="match_parent"
+        android:imeOptions="actionNext"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_contact"
+        />
+    <EditText
+        android:inputType="number"
+        android:id="@+id/etCostPinDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:imeOptions="actionNext"
+        android:hint="@string/enter_address"
+        />
+    <EditText
+        android:inputType="number"
+        android:id="@+id/etCostOvDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:imeOptions="actionDone"
+        android:hint="@string/avgOrderValue"/>
+    <Button
+        android:id="@+id/btnCostAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/inputData"/>
+
+</LinearLayout>

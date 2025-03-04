@@ -6,17 +6,17 @@
     app:startDestination="@id/orderHistoryFragment">
     <fragment
         android:id="@+id/orderHistoryFragment"
-        android:name="com.example.myapplication.OrderHistoryFragment"
+        android:name="com.example.myapplication.bottomnavigation.OrderHistoryFragment"
         android:label="fragment_order_history"
         tools:layout="@layout/fragment_order_history" />
     <fragment
         android:id="@+id/customerDataFragment"
-        android:name="com.example.myapplication.CustomerDataFragment"
+        android:name="com.example.myapplication.bottomnavigation.CustomerDataFragment"
         android:label="fragment_customer_data"
         tools:layout="@layout/fragment_customer_data" />
     <fragment
         android:id="@+id/stockFragment"
-        android:name="com.example.myapplication.StockFragment"
+        android:name="com.example.myapplication.bottomnavigation.StockFragment"
         android:label="fragment_stock"
         tools:layout="@layout/fragment_stock" />
 </navigation>

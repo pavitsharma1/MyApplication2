@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/Itemname"
+        android:imeOptions="actionNext"
+        android:inputType="text"
+        android:id="@+id/tvStockName2"
+        />
+    <EditText
+        android:inputType="number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/Itemprice"
+        android:imeOptions="actionNext"
+        android:id="@+id/tvStockPrice2"
+        />
+    <EditText
+        android:inputType="number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/ItemQuantity"
+        android:imeOptions="actionDone"
+        android:id="@+id/tvStockQuantity2"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/inputData"
+        android:id="@+id/btnStockAdd2"/>
+
+</LinearLayout>

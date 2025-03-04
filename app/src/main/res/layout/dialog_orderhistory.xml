@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <EditText
+        android:id="@+id/etOrderName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/Itemname"
+        android:imeOptions="actionNext"
+        android:inputType="textPersonName"
+        />
+    <EditText
+        android:inputType="number"
+        android:id="@+id/etOrderQuantity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:imeOptions="actionNext"
+        android:hint="@string/ItemQuantity"
+        />
+    <EditText
+        android:inputType="number"
+        android:id="@+id/etOrderPrice"
+        android:imeOptions="actionDone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/Itemprice"
+        />
+    <Button
+        android:id="@+id/btnOrder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/inputData"/>
+
+</LinearLayout>

@@ -2,15 +2,15 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/odrHistory"
+        android:id="@+id/odrHistoryItem"
         android:title="@string/orderHistory"
         android:icon="@drawable/home_icon"/>
     <item
-        android:id="@+id/stockManager"
+        android:id="@+id/stockManagerItem"
         android:title="@string/Stockmanage"
         android:icon="@drawable/home_icon"/>
     <item
-        android:id="@+id/costumer"
+        android:id="@+id/costumerDataItem"
         android:title="@string/costumerdata"
         android:icon="@drawable/home_icon"/>
 </menu>

@@ -24,6 +24,18 @@ class BottomNavigationActivity : AppCompatActivity() {
             insets
         }
         navController = findNavController(R.id.navHost)
-
+        binding.btmNav1.setOnItemSelectedListener {
+            when(it.itemId){
+                R.id.odrHistoryItem->{navController.navigate(R.id.orderHistoryFragment)
+                }
+                R.id.costumerDataItem->{
+                    navController.navigate(R.id.customerDataFragment)
+                }
+                R.id.stockManagerItem->{
+                    navController.navigate(R.id.stockFragment)
+                }
+            }
+            return@setOnItemSelectedListener true
+        }
     }
 }
